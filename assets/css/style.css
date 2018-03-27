@@ -1,0 +1,56 @@
+h1 {
+    font-family: 'Mina', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color:maroon;
+}
+
+#game {
+    background: url('https://previews.123rf.com/images/cienpies/cienpies1508/cienpies150800012/43200888-retro-vintage-80s-memphis-fashion-style-seamless-pattern-illustration-background-ideal-for-fabric-de.jpg');
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+}
+
+#instructions {
+    border-top-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+    border-right-style: double;
+    background:lavender;
+    font-family: 'Poiret One', cursive;
+}
+
+.question {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    background:limegreen;
+    font-family: 'Poiret One', cursive;
+}
+
+.choices {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    background:turquoise;
+    font-family: 'Poiret One', cursive;
+}
+.triviaMessage {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    background:aliceblue;
+    font-family: 'Poiret One', cursive;
+}
+.result {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    background:red;
+    font-family: 'Poiret One', cursive;
+}
