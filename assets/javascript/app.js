@@ -49,8 +49,9 @@ var quizOver = false;
 $(document).ready(function() {
     // Display first question
     displayCurrentQuestion();
-    $(this),find('.quizMessage').hide();
+    $(this).find('.quizMessage').hide();
     // Display next question when clicking "Next Question" button
+    console.log('display')
     $(this).find('#nextQuestionbutton').on('click', function(){
         if(!quizOver) {
             value = $("input[type='radio']:checked").val();
@@ -129,19 +130,20 @@ var game = {
         },
     start: function() {
         timer = setInterval(game.countdown, 1000)
-        $('div').text('Time Remaining: ' + game.counter + ' seconds'),
+        $('#game').text('Time Remaining: ' + game.counter + ' seconds'),
     reset= function() {
         timer = setInterval(game.countdown, 1000)
-        $('div').text('Time Remaining: ' + game.counter + ' seconds')
+        $('#game').text('Time Remaining: ' + game.counter + ' seconds')
     }    
   }
 };
 $(document).on('click', '#startbutton', function() {
     game.start();
-$(document).on('click', '#resetbutton', function(){
-    g
-})   
 });
+$(document).on('click', '#resetbutton', function(){
+    
+})   
+
 
 // for (var i = 0; i < questions.length; i++);
 
@@ -156,5 +158,7 @@ function timer() {
 setTimeout(fiveSeconds, 1000 * 5);
 setTimeout(tenSeconds, 1000 * 10);
 setTimeout(timeUp, 1000 * 15);
+
+$('#game').text('Time Remaining: ' + timer + ' seconds')
 
 }
